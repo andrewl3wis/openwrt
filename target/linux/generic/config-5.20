@@ -4844,6 +4844,7 @@ CONFIG_PROC_SYSCTL=y
 # CONFIG_PVPANIC is not set
 # CONFIG_PWM is not set
 # CONFIG_PWM_ATMEL_TCB is not set
+# CONFIG_PWM_CLK is not set
 # CONFIG_PWM_DEBUG is not set
 # CONFIG_PWM_DWC is not set
 # CONFIG_PWM_FSL_FTM is not set
