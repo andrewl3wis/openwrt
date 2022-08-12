@@ -31,7 +31,7 @@ Signed-off-by: Felix Fietkau <nbd@nbd.name>
  	help
  	  This option adds the flow table core infrastructure.
  
-@@ -1025,6 +1024,15 @@ config NETFILTER_XT_TARGET_NOTRACK
+@@ -1024,6 +1023,15 @@ config NETFILTER_XT_TARGET_NOTRACK
  	depends on NETFILTER_ADVANCED
  	select NETFILTER_XT_TARGET_CT
  
