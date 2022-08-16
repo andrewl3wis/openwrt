@@ -54,7 +54,7 @@ jobs:
 
             - name: Build target images
               run: |
-                make -j$(nproc) V=s 'IGNORE_ERRORS=y m' || make V=s 'IGNORE_ERRORS=n m'
+                IGNORE_ERRORS=1 make -j$(nproc) V=s 'IGNORE_ERRORS=y m' || make V=s 'IGNORE_ERRORS=n m'
 
             - name: TAR output
               run: tar -cvf rockchip-images.tar bin/targets/rockchip/armv8
