@@ -1,3 +1,4 @@
+#headache
 CONFIG_ALL_KMODS=y
 CONFIG_TARGET_rockchip=y
 CONFIG_TARGET_rockchip_armv8=y
