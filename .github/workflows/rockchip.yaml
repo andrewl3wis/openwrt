@@ -4,7 +4,7 @@ on: [push]
 jobs:
     build:
         name: Prepare and build rockchip-6.0 images
-        runs-on: ubuntu-latest
+        runs-on: self-hosted
 
         steps:
             - name: Setup Ubuntu
