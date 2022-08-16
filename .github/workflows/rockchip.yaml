@@ -40,7 +40,7 @@ jobs:
                 wget https://codeload.github.com/torvalds/linux/tar.gz/refs/tags/v6.0-rc1 -O dl/linux-6.0-rc1.tar.gz
 
             - name: Download package sources
-              run: make download V=s
+              run: make -j$(nproc) download V=s
 
             - name: Build tools
               run: |
@@ -54,7 +54,7 @@ jobs:
 
             - name: Build target images
               run: |
-                make -j$(nproc) V=s 'IGNORE_ERRORS=n m' || \
+                make -j$(nproc) V=s 'IGNORE_ERRORS=y m' || \
                 make V=s 'IGNORE_ERRORS=n m'
 
             - name: TAR output
