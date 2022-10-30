@@ -1,0 +1,7 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+ethtool -s eth1 autoneg on advertise 0x80000000002f
+ethtool -s eth2 autoneg on advertise 0x80000000002f
+ethtool -s eth3 autoneg on advertise 0x80000000002f
+ethtool -s eth4 autoneg on advertise 0x80000000002f
+exit 0
